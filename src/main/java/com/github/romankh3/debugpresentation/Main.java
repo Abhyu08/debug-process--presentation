@@ -32,7 +32,8 @@ public class Main {
         //get honey from bee nectar
         beeHive.populateHoney();
 
-        // отобразим результат
+        //
+        //display the result
         System.out.println(String.format("%s honey was produced by %d bees from %d honey plants",
                 beeHive.getHoney(), beeHive.getBees().size(), honeyPlants.size()));
     }
