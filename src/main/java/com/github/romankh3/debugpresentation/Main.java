@@ -9,22 +9,27 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        // создаем медоносы: яблочное и сливовое деревья
+        //
+        //we create honey plants: apple and plum trees
         HoneyPlant appleTree = new HoneyPlant(40);
         HoneyPlant plumTree = new HoneyPlant(30);
 
-        // добавляем деревья в коллекцию
+        //
+        //adding trees to the collection
         List<HoneyPlant> honeyPlants = Arrays.asList(appleTree, plumTree);
 
-        // создаем улик с семью пчелами
+        //
+        //create clues with seven bees
         BeeHive beeHive = new BeeHive(7);
 
-        // собираем нектар
+        //
+        //collecting nectar
         beeHive.getBees().forEach(bee -> {
             bee.fetchNectar(honeyPlants);
         });
 
-        // получить мёд из нектара пчел
+        //
+        //get honey from bee nectar
         beeHive.populateHoney();
 
         // отобразим результат
