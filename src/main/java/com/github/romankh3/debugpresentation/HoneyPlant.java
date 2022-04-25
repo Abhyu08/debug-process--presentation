@@ -12,7 +12,8 @@ public class HoneyPlant {
     }
 
     public double retrieveNectar(double nectar) {
-        if (nectar == 0) {
+        if ( nectar == 0 ) { // nectar should get replaced by nectarCapacity   // if (nectarCapacity == 0)
+                            // nectar--> how much we are going to pull out //nectarCapacity --> How much is available!
             return 0;
         }
         nectarCapacity -= nectar;
